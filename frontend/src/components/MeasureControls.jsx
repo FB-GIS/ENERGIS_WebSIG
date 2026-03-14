@@ -13,7 +13,7 @@ function MeasureControls() {
         if (!map) return;
         
         // There is a conflict between the react leaflet-measure library and leaflet. When the user clicks on the map to draw a geometry, the map automatically moves. 
-        // So we need to hange the default behavior of the L.Control.Measure method (from Leaflet-measure plugin) to disable auto-pan (automatic map movement) when using the measurement tools.
+        // So we need to change the default behavior of the L.Control.Measure method (from Leaflet-measure plugin) to disable auto-pan (automatic map movement) when using the measurement tools.
         
         // Disable auto-pan by overriding the plugin’s internal method
         L.Control.Measure.include({
