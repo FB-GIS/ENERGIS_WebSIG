@@ -1,0 +1,22 @@
+.gis-form {
+    
+    @include form-element-style;
+    
+
+
+    @media screen and (min-width: 780px) {
+        form {
+            min-width: 600px;
+        }
+    }
+    
+    
+  
+    @media screen and (min-width: 1024px) {
+         form {
+            min-width: 900px;
+        }       
+
+    }   
+    
+}

@@ -1,0 +1,114 @@
+.contact-main {
+
+    @extend %flex-center-col;
+
+
+    .map {
+
+        width: 100vw;
+
+        iframe {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    section {
+
+        max-width: 300px;
+        width: 100%;
+        font-family: "Roboto", sans-serif;
+
+
+
+        h1 {
+
+            text-align: center;
+            color: black;
+            background-color: $white;
+            padding: 1rem;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+
+        }
+
+        .contact {
+
+            font-weight: 500;
+            font-size: 1rem;
+            text-align: center;
+            gap: 1rem;
+            margin: 2rem 0;
+
+            @extend %flex-center-col;
+
+
+            div:nth-child(2) {
+
+                p:before {
+                    font-family: "FontAwesome";
+                    content: "\f2b9";
+                    margin: 1rem;
+                }
+            }
+
+            div:nth-child(3) {
+
+                a:before {
+                    font-family: "FontAwesome";
+                    content: "\f095";
+                    margin: 1rem;
+                }
+            }
+
+
+            div:nth-child(4) {
+
+                a:before {
+                    font-family: "FontAwesome";
+                    content: "\f0e0";
+                    margin: 1rem;
+                }
+            }
+
+        }
+    }
+
+}
+
+
+
+@media screen and (min-width: 780px) {
+    
+    .contact-main section {
+        max-width: 780px;
+        
+        .contact {
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem; 
+            justify-items: center; 
+            align-items: center;
+            
+            > div {
+                width: 100%; 
+                text-align: center;
+                margin: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    
+    .contact {
+        
+        >div p, a {
+            font-size: 1.2rem;
+        }
+        
+        
+    }
+    
+}

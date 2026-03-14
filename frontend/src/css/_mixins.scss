@@ -1,0 +1,350 @@
+@mixin glass-style {
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid $background_white;
+    border-top: 1px solid $background_white;
+    padding: 1rem;
+    width: 150px;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    --webkit-backdrop-filter: blur(5px);
+    --moz-backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px $background_white;
+    transition: all .3s;
+    margin-bottom: 2em;
+
+}
+
+
+@mixin container($width) {
+    margin: 0 auto;
+    background-color: $white;
+    max-width: $width;
+}
+
+
+@mixin table-page-style( $border-color: $dark_green,
+$header-bg-color: $dark_green,
+$header-text-color: $white,
+$row-hover-bg-color: skyblue,
+$normal-row-bg-color: $white,
+$striped-row-bg-color: $light_blue,
+$text-color: $dark_blue,
+$background-color: $white,
+$width: 100%,
+$margin: 0 auto,
+$padding: 8px,
+$font-family: 'Roboto',
+$table-border-width: 1px,
+$table-border-style: solid,
+$table-border-color: $light_green,
+$border-collapse: collapse,
+$cell-border-width: 1px,
+$cell-border-style: solid,
+$cell-border-color: $light_green,
+$text-align: center,
+$link-add-bg-color: $dark_blue,
+$link-add-hover-bg-color: $light_green,
+$link-add-txt-color: $white,
+$link-bg-color: $dark_blue,
+$link-hover-bg-color: $light_green,
+$link-txt-color: $white,
+$button-bg-color: red,
+$button-hover-bg-color: orange,
+$button-txt-color: $white,
+) {
+
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+
+
+    h2 {
+        font-size: 2rem;
+        color: $dark_green;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin: 2rem 0;
+        color: $dark_blue;
+        text-shadow: 1px 1px 2px skyblue;
+    }
+
+    a {
+        display: inline-block;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        background-color: $link-add-bg-color;
+        color: $link-add-txt-color;
+
+
+        &:hover {
+            background-color: $link-add-hover-bg-color;
+        }
+
+    }
+
+    table {
+        height: 100vh;
+        max-width: $width;
+        margin: $margin;
+        background-color: $background-color;
+        font-family: $font-family;
+        border-collapse: $border-collapse;
+        color: $text-color;
+        border: $table-border-width $table-border-style $table-border-color;
+
+        th,
+        td {
+            border: $cell-border-width $cell-border-style $cell-border-color;
+            padding: $padding;
+            text-align: $text-align;
+            white-space: normal;
+        }
+
+        th {
+            background-color: $header-bg-color;
+            color: $header-text-color;
+            font-weight: bold;
+        }
+
+        tr:nth-child(odd) {
+            background-color: $normal-row-bg-color;
+        }
+
+        tr:nth-child(even) {
+            background-color: $striped-row-bg-color;
+        }
+
+        tr:hover {
+            background-color: $row-hover-bg-color;
+        }
+
+        a {
+            background-color: $link-bg-color;
+            border-radius: 10px;
+            padding: 10px;
+            color: $link-txt-color;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $link-hover-bg-color;
+            }
+        }
+
+        button {
+            background-color: $button-bg-color;
+            border-radius: 10px;
+            padding: 10px;
+            color: $button-txt-color;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $button-hover-bg-color;
+            }
+        }
+
+    }
+}
+
+
+@mixin form-element-style() {
+
+    text-align: center;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+
+    @extend %flex-center-col;
+
+    h2 {
+        font-size: 2rem;
+        color: $dark_green;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin: 2rem 0;
+        color: $dark_blue;
+        text-shadow: 1px 1px 2px skyblue;
+    }
+
+    h2,
+    h3 {
+        margin: 2rem;
+    }
+
+
+    form {
+        background-color: $city_Lights;
+        padding: 2rem 3rem;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        margin: 0 auto;
+
+        >label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        >input,
+        >textarea,
+        >select {
+            max-width: 30rem ;
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        
+        >p {
+            margin: 1rem;
+            font-weight: bold;
+            color: $dark_green;
+        }
+
+
+        button {
+            font-size: 1.2rem;
+            padding: 1rem;
+            display: block;
+            margin: auto;
+        }
+
+    }
+}
+
+
+@mixin article-img-desktop() {
+    img {
+        width: 20rem;
+        height: 13rem;
+        float: right;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    article::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+
+@mixin section-description() {
+
+
+    margin: 1rem;
+    font-size: 1rem;
+
+
+    article {
+
+        padding-top: 3rem;
+        color: $dark_blue;
+        text-align: justify;
+        font-family: "Roboto", sans-serif;
+
+        >h2 {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        img {
+            display: none;
+        }
+
+        p {
+            padding-top: 2rem;
+
+        }
+
+        ul {
+
+            padding-top: 1rem;
+
+            li {
+                padding-top: 1rem;
+                margin: 0 10px;
+            }
+
+        }
+
+
+    }
+
+}
+
+
+@mixin icon_enr($title, $left, $size) {
+    content: "";
+    position: absolute;
+    top: 0.3rem;
+    left: $left;
+    width: $size;
+    height: $size;
+    background-image: url("/images/websig/logo_#{$title}.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+@mixin banners($file, $title) {
+
+    background-image: url('/images/#{$file}/banner_#{$title}.jpg');
+    background-position: left 35% bottom 45%;
+    background-size: cover;
+    height: 30rem;
+    white-space: wrap;
+    position: relative;
+    @extend %flex-center;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        background: rgba(0, 0, 0, 0.35);
+        width: 100%;
+        height: 100%;
+    }
+
+    >h1 {
+        position: absolute;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        top: 15rem;
+        font-size: 2rem;
+        color: $white;
+        padding: 0 1rem;
+    }
+}
+
+
+/* *****************************************************
+* PLACEHOLDERS : only common properties
+****************************************************** */
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+%flex-center-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

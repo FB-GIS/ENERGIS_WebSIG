@@ -1,0 +1,101 @@
+.banner-geomatics {
+
+    @include banners("geomatique", "geomatics");
+}
+
+
+
+.container {
+    
+    font-size: 1rem;
+
+    @extend %flex-center-col;
+
+    @include container(350px);
+
+
+    blockquote {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        margin: 1rem;
+        
+        &:nth-child(3) {
+            margin: 4rem 1rem;
+        }
+    }
+
+    iframe {
+        padding: 2rem 0 0 0;
+        max-width: 350px;
+    }
+
+
+    .description-geomatics {
+
+        @include section-description;
+    }
+
+
+
+}
+
+
+
+
+/* *****************************************************
+  RESPONSIVE : MEDIA QUERIES
+****************************************************** */
+
+@media screen and (min-width: 780px) {
+
+    .container {
+        @include container(600px);
+
+        iframe {
+            max-width: 100%;
+        }
+
+        .description-geomatics {
+
+            article {
+
+                @include article-img-desktop();
+
+                font-size: 16px;
+
+                h2 {
+                    font-size: 18px;
+                }
+
+                img {
+                    display: inline-block;
+                    margin-top: 2rem ;
+                    margin-right: 1rem;
+                    border-radius: 10px;
+                }
+
+            }
+        }
+
+
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .banner-geomatics {
+        >h1 {
+            font-size: 3rem;
+        }
+    }
+
+    .container {
+        @include container(1200px);
+
+
+
+    }
+
+}

@@ -1,0 +1,55 @@
+
+.leaflet-container {
+    width: 100%;
+    height: 70vh;
+}
+
+.leaflet-draw-draw-circlemarker {
+    display: none !important
+}
+
+.project_area_form {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    z-index: 1000;
+    background-color: $city_Lights;
+    padding: 1rem;
+    border: 1px solid black;
+
+    >form {
+        @extend %flex-center-col;
+        gap: 2rem;
+
+        button {
+            background-color: $dark_green;
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 780px) {
+
+    .leaflet-container {
+
+        height: 70vh;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+
+    .leaflet-container {
+
+        height: 80vh;
+    }
+
+}

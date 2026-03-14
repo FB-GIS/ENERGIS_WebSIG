@@ -1,0 +1,142 @@
+.banner-webgis {
+
+ @include banners("websig", "webgis");
+
+}
+
+
+.container {
+
+ >p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 3rem 2rem 0 2rem;
+ }
+
+ .description-webgis {
+
+  @include section-description;
+
+  h2 {
+   text-align: center;
+   margin: 1.5rem;
+  }
+
+  ul {
+
+   border: 2px solid $light_green;
+   padding: 1rem;
+   list-style: none;
+
+   &.enr-bullets {
+
+    li {
+     position: relative;
+     padding-left: 4rem;
+
+     &.wind::before {
+      @include icon_enr("eolien",
+      0,
+      1.5rem)
+     }
+
+     &.solar::after {
+      @include icon_enr("solaire",
+      1.5rem,
+      2rem)
+     }
+    }
+
+   }
+  }
+ }
+
+
+ .connexion {
+
+  font-family: "Roboto", sans-serif;
+
+  div {
+   background-color: $dark_green;
+   padding: 2rem;
+   text-align: center;
+   margin: 2rem auto;
+   width: 10rem;
+
+
+   &:hover {
+    background-color: $light_green;
+   }
+
+   a {
+    color: $white;
+    font-weight: bold;
+    font-size: 1.3rem;
+
+   }
+  }
+
+  p {
+   color: $dark_blue;
+   font-weight: bold;
+   text-align: center;
+  }
+
+ }
+
+}
+
+/* *****************************************************
+  RESPONSIVE : MEDIA QUERIES
+****************************************************** */
+
+@media screen and (min-width: 780px) {
+
+ .container {
+  @include container(600px);
+
+  >p {
+   font-size: 1.2rem;
+  }
+
+
+  .connexion {
+
+   div {
+    margin: 2rem 0;
+    width: 20rem;
+   }
+  }
+
+ }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+ .banner-webgis {
+  >h1 {
+   font-size: 3rem;
+  }
+ }
+
+ .container {
+  @include container(1200px);
+
+  >p {
+   font-size: 1.5rem;
+  }
+
+  .connexion {
+
+   div {
+    margin: 2rem 0;
+    width: 30rem;
+   }
+  }
+
+ }
+
+}

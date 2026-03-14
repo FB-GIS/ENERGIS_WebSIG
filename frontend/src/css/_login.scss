@@ -1,0 +1,81 @@
+
+.login {
+    background: linear-gradient(50deg, rgba(20, 200, 26, 0.8), rgb(13, 103, 98));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+
+
+
+
+    >form {
+        background-color: $background_white;
+        padding: 3rem;
+        border-radius: 20px;
+        border-left: 1px solid $background_white;
+        border-top: 1px solid $background_white;
+        backdrop-filter: blur(10px);
+        --webkit-backdrop-filter: blur(10px);
+        --moz-backdrop-filter: blur(10px);
+        box-shadow: 20px 20px 40px -6px $background_black;
+        text-align: center;
+        @extend %flex-center-col; 
+
+
+        >p {
+            color: white;
+            font-weight: 500;
+            opacity: 0.7;
+            font-size: 1.4rem;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 4px $background_white;
+        }
+
+        >input {
+
+            @include glass-style;
+            width: 200px;
+
+            &::placeholder {
+                color: #fff;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba(255, 255, 255, 0.2);
+                box-shadow: 4px 4px 60px 8px $background_black;
+            }
+        }
+
+
+        >button {
+            @include glass-style;
+            cursor: pointer;
+            width: 150px;
+        }
+        
+        >a {
+            font-size: 14px;
+            color: $white;
+            opacity: 0.8;
+            
+            &:hover {
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+
+    }
+    
+        .error-message {
+            color: #fff;
+            margin-top: 1rem;
+            font-size: 1.3rem;
+        }
+
+
+}

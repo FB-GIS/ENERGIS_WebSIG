@@ -1,0 +1,137 @@
+.banner-gis-enr {
+
+    @include banners("sig_enr", "gis-enr");
+
+
+}
+
+.container {
+    
+    font-size: 1rem;
+
+
+    .intro-gis-enr {
+
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        margin: 2rem 1rem;
+
+        p {
+            margin: 1rem 0;
+        }
+
+    }
+
+    .description-gis-enr {
+
+        @include section-description;
+
+        article:nth-child(2) {
+            margin: 5rem 0;
+        }
+    }
+
+
+    .cartography {
+
+        font-family: "Roboto", sans-serif;
+        padding: 1rem;
+        width: 100%;
+
+        >h2 {
+            color: $dark_blue;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        div {
+            text-align: center;
+
+            button {
+                margin: 1rem;
+                background-color: $dark_green;
+                color: $white;
+                padding: 8px;
+                border-radius: 8px;
+                cursor: pointer;
+
+
+                &:hover {
+                    background-color: $light_green;
+                }
+            }
+        }
+
+        figure {
+
+            text-align: center;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+
+/* *****************************************************
+  RESPONSIVE : MEDIA QUERIES
+****************************************************** */
+
+@media screen and (min-width: 780px) {
+
+    .container {
+        @include container(600px);
+
+
+        .description-gis-enr {
+
+            article {
+
+                @include article-img-desktop();
+
+
+                img {
+                    display: inline-block;
+                    margin-top: 2rem;
+                    margin-right: 1rem;
+                    border-radius: 10px;
+                }
+
+            }
+        }
+        
+        
+        .cartography {
+            figure {
+
+            text-align: center;
+
+            img {
+                width: 70%;
+            }
+        }        
+        }
+
+
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .banner-gis-enr {
+        >h1 {
+            font-size: 3rem;
+        }
+    }
+
+    .container {
+        @include container(1200px);
+
+
+    }
+
+}

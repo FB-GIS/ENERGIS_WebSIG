@@ -1,0 +1,33 @@
+.table-user-project-areas {
+    
+    @include table-page-style;
+
+    thead th:nth-child(1), // Area
+    thead th:nth-child(2), // Comment
+    thead th:nth-child(4), // Geometry
+    tbody td:nth-child(1),
+    tbody td:nth-child(2),
+    tbody td:nth-child(4) {
+        display: none;
+    } 
+    
+    
+    // Tablette : Display Area (1) 
+    @media screen and (min-width: 780px) {
+        thead th:nth-child(1),
+        tbody td:nth-child(1) {
+            display: table-cell;
+        }
+    }
+    
+    
+    // Desktop : Display all fields
+    @media screen and (min-width: 1024px) {
+        thead th:nth-child(2),
+        thead th:nth-child(4),
+        tbody td:nth-child(2),
+        tbody td:nth-child(4) {
+            display: table-cell;
+        }
+    }
+}

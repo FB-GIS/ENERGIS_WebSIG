@@ -1,0 +1,121 @@
+@import '_vars';
+@import '_normalize';
+@import '_mixins';
+@import "leaflet-measure/dist/leaflet-measure.css";
+@import 'node_modules/leaflet-geosearch/assets/css/leaflet.css';
+@import 'react-confirm-alert/src/react-confirm-alert.css';
+@import '_header';
+@import '_footer';
+@import '_map';
+@import '_dashboard';
+@import '_table_users';
+@import '_table_projects';
+@import '_table_project_areas';
+@import '_table_user_project_areas';
+@import '_table_developers';
+@import '_table_status_projects';
+@import '_table_type_solar';
+@import '_table_wind_models';
+@import '_form';
+@import '_home';
+@import '_geomatique';
+@import '_gis_enr';
+@import '_webgis';
+@import '_login';
+@import '_contact';
+
+
+main {
+    background-color: $light_blue;
+}
+
+.error-msg {
+    color: red;
+    text-shadow: 2px 0 $white, -2px 0 $white, 0 2px $white, 0 -2px $white,
+             1px 1px $white, -1px -1px $white, 1px -1px $white, -1px 1px $white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.form-msg {
+    text-align: center;
+    color: $light_green;
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.button {
+    background-color: $dark_green;
+    color: white;
+    border-radius: 15px;
+    padding: 0.3rem 2rem;
+    margin: 1rem 0 5rem 0;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $light_green;
+    }
+}
+
+
+
+.green-dot-list {
+
+    color: $light_green;
+    font-size: 1.5rem;
+    vertical-align: sub;
+    padding: 0 5px 0 0;
+
+}
+
+.goBackButton {
+    // position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    background-color: $dark_green;
+    color: $white;
+    padding: 0.5rem;
+    margin: 1rem ;
+    border-radius: 10px;
+    cursor: pointer;
+    // top: 4rem;
+    // left: 0;
+    
+    &:hover {
+        background-color: $light_green;
+    }
+}
+
+
+.searchBar {
+
+    margin: 2rem 0;
+
+    >input {
+        padding: 0.5rem;
+        width: 300px;
+        border: 1px solid black;
+    }
+}
+
+
+.react-confirm-alert-body {
+    
+    > h1 {
+        font-size: 1rem;
+        font-weight: bold;
+        color: red;
+        margin-bottom: 1rem;
+    }
+    
+    button[label="Yes"] {
+        background-color: red;
+    }
+    
+    button[label="Non"] {
+        background-color: grey;
+    }
+}

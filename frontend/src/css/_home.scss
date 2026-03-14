@@ -1,0 +1,184 @@
+// BANNIERE PAGE D'ACCUEIL
+.banner-home {
+    background-image: url('/images/home/wind_farm.jpg');
+    background-position: left 35% bottom 45%;
+    background-size: cover;
+    height: 35rem;
+    white-space: nowrap;
+    position: relative;
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: rgba(0, 0, 0, 0.35);
+        width: 100%;
+        height: 100%;
+    }
+
+    >h1 {
+        position: absolute;
+        font-family: "Roboto", sans-serif;
+        font-weight: 270;
+        top: 15rem;
+        font-size: 2rem;
+        color: $white;
+        padding: 0 1rem;
+    }
+
+    .dynamic-text {
+        display: inline-block;
+        overflow: hidden;
+        border-right: 5px solid $light-green;
+        white-space: nowrap;
+        animation: typing 3s steps(22) infinite, blink 0.7s step-end infinite;
+    }
+
+}
+
+
+.introduction,
+.prestation {
+    @extend %flex-center-col;
+    text-align: center;
+    padding: 2rem;
+    color: $dark_blue;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+
+    h2 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+
+        span {
+            color: $light_green;
+        }
+    }
+
+    p {
+        padding: 10px;
+    }
+
+}
+
+.prestation {
+
+    >h2 {
+
+        margin-bottom: 2rem;
+
+        &:after {
+            content: '';
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            width: 40%;
+            border: 2px solid $light_green;
+        }
+    }
+
+    article {
+
+        padding: 1rem 2rem;
+
+
+        figure {
+            position: relative;
+            display: inline-block;
+
+            img {
+                display: block;
+                width: 100%;
+                border-bottom: 10px solid $light_green;
+            }
+
+
+            figcaption {
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.45);
+                inset: 0 0 10px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.1rem;
+                font-weight: 500;
+                color: white;
+                text-align: center;
+                padding: 3rem;
+            }
+        }
+    }
+}
+
+
+
+
+/* *****************************************************
+  RESPONSIVE : MEDIA QUERIES
+****************************************************** */
+
+@media screen and (min-width: 780px) {
+
+    .container {
+        @include container(600px);
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .banner-home {
+        >h1 {
+            font-size: 3rem;
+        }
+    }
+
+    .container {
+        @include container(1200px);
+    }
+
+
+    .prestation {
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            gap: 2rem;
+
+            article {
+                height: auto;
+                width: 45%;
+                margin: 0;
+
+            }
+        }
+
+    }
+
+}
+
+
+/* *****************************************************
+  KEYFRAMES ANIMATION
+****************************************************** */
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 19.5ch;
+    }
+}
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

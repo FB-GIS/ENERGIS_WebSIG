@@ -1,0 +1,53 @@
+@font-face {
+	font-family: "Inclusive";
+	src: url("../assets/fonts/inclusive/InclusiveSans-Regular.woff2");
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+
+.footer {
+
+    background-color: $dark_green;
+    @extend %flex-center-col;
+    padding: 1rem;
+
+    p {
+        font-family: "Inclusive";
+        font-size: 2rem;
+        margin: 0;
+        color: $white;
+
+        span {
+            color: $light_green;
+        }
+    }
+    
+    .social-icons {
+        @extend %flex-center-col;
+        margin-top: 1rem;
+        gap: 1rem;
+        font-size: 2rem;
+        color: $white;
+        
+        a:hover {
+            color: $light_green;
+        }
+    }
+}
+
+
+@media screen and (min-width: 780px) {
+ 
+ .footer{
+     flex-direction: row;
+     justify-content: space-between;
+     
+     .social-icons {
+         flex-direction: row;
+     }
+     
+ }
+    
+}
