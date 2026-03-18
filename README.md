@@ -67,12 +67,12 @@ MySQL pour la gestion des données
 Services WMS (Web Map Service)  
 
 ## Installation locale
-Clonez ce dépôt : git clone https://github.com/FB-GIS/ENERGIS_WebGIS.git
-Ajouter les données à votre SGBDR (dossier /Data)
-Modifier les information du fichier .env avec les infos de votre BDD (host, user, password...etc)
-Dans le terminal de votre IDE, positionnez vous sur le dossier backend : cd sites/0_ENERGIS/backend/ PUIS npm run dev
-Dans le terminal de votre IDE, positionnez vous sur le dossier frontend : cd sites/0_ENERGIS/backend/ PUIS npm run dev
-Pour la gestion du SCSS, positionnez vous sur le dossier css : cd sites/0_ENERGIS/frontend/src/css/ PUIS sass --watch style.scss:style.css
+Clonez ce dépôt : git clone https://github.com/FB-GIS/ENERGIS_WebGIS.git  
+Ajouter les données à votre SGBDR (dossier /Data)  
+Modifier les information du fichier .env avec les infos de votre BDD (host, user, password...etc)  
+Dans le terminal de votre IDE, positionnez vous sur le dossier backend : cd sites/0_ENERGIS/backend/ PUIS npm run dev  
+Dans le terminal de votre IDE, positionnez vous sur le dossier frontend : cd sites/0_ENERGIS/backend/ PUIS npm run dev  
+Pour la gestion du SCSS, positionnez vous sur le dossier css : cd sites/0_ENERGIS/frontend/src/css/ PUIS sass --watch style.scss:style.css  
 
 ## Sources des données
 Les données spécifiques aux projets éoliens et photovoltaïques ont été agrégées à partir de plusieurs sources (DREAL, DDT, Geo-IDE...etc)
