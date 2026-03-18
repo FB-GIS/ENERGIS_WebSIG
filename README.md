@@ -61,10 +61,10 @@ Ajouter, supprimer et modifier les informations et géométries des données gé
 
 
 ## Technologies utilisées
-HTML, SCSS JavaScript, Leaflet, React, Node.js
-Leaflet pour la cartographie web
-MySQL pour la gestion des données
-Services WMS (Web Map Service)
+HTML, SCSS JavaScript, Leaflet, React, Node.js  
+Leaflet pour la cartographie web  
+MySQL pour la gestion des données  
+Services WMS (Web Map Service)  
 
 ## Installation locale
 Clonez ce dépôt : git clone https://github.com/FB-GIS/ENERGIS_WebGIS.git
