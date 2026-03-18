@@ -1,14 +1,14 @@
-# ENERGIS_WebGIS
-Description
+### ENERGIS_WebGIS
+## Description
 
 Cette application est constituée :
 
 1/ D'un site web destiné à un bureau d'étude spécialisé dans la géomatique appliquée aux énergies renouvelables.
 2/ D'une application WebSIG permettant aux utilisateurs de visualiser l'ensemble des projets éoliens et photovoltaïques répartis sur le territoire national.
 
-Fonctionnalités
+## Fonctionnalités
 
-1) Site internet 
+# 1) Site internet 
 
 Le site internet sera composé de plusieurs pages permettant de :
 
@@ -18,11 +18,11 @@ Détailler les fonctionnalités et les données mises à disposition par l'appli
 Fournir un espace d'inscription et de connexion pour accéder à l'application.
 Offrir une page de contact affichant uniquement les coordonnées du bureau d'étude afin d’obtenir plus d’informations sur l'application et les services proposés.
 
-2) Application WebSIG 
+# 2) Application WebSIG 
 
 L'ensemble des fonctionnalités de l'application sera donc associé à l'interface cartographique de manière à exploiter les données géospatiales et gérer les comptes utilisateurs.
 
-A. Utilisateurs
+# A. Utilisateurs
 
 L'accès à la plate forme WebSIG nécessitera une authentification via un identifiant (adresse e-mail) et un mot de passe renseignés lors de l'inscription. Les utilisateurs pourront se déconnecter librement de l'application et gérer leurs informations personnelles via un profil utilisateur.
 
@@ -48,7 +48,7 @@ Recherche rapide de localités via un champ de recherche : les utilisateurs pour
 Par le biais d'un dashboard, l'utilisateur pourra accéder soit à son profil mais aussi à l'ensemble des zones d'étude qu'il aura tracées dans l'application cartographique. Il pourra donc les visualiser, les modifier mais aussi les supprimer.
 
 
-B. Administrateurs
+# B. Administrateurs
 
 L'administrateur disposera d’une interface dédiée (dashboard) pour la gestion des utilisateurs et des données géographiques de l'application.
 
@@ -60,13 +60,13 @@ Gérer les rôles et les autorisations (utilisateur standard, administrateur).
 Ajouter, supprimer et modifier les informations et géométries des données géographiques.
 
 
-Technologies utilisées
+## Technologies utilisées
 HTML, SCSS JavaScript, Leaflet, React, Node.js
 Leaflet pour la cartographie web
 MySQL pour la gestion des données
 Services WMS (Web Map Service)
 
-Installation locale
+## Installation locale
 Clonez ce dépôt : git clone https://github.com/FB-GIS/ENERGIS_WebGIS.git
 Ajouter les données à votre SGBDR (dossier /Data)
 Modifier les information du fichier .env avec les infos de votre BDD (host, user, password...etc)
@@ -74,8 +74,8 @@ Dans le terminal de votre IDE, positionnez vous sur le dossier backend : cd site
 Dans le terminal de votre IDE, positionnez vous sur le dossier frontend : cd sites/0_ENERGIS/backend/ PUIS npm run dev
 Pour la gestion du SCSS, positionnez vous sur le dossier css : cd sites/0_ENERGIS/frontend/src/css/ PUIS sass --watch style.scss:style.css
 
-#Sources des données
+## Sources des données
 Les données spécifiques aux projets éoliens et photovoltaïques ont été agrégées à partir de plusieurs sources (DREAL, DDT, Geo-IDE...etc)
 
-Auteurs
+## Auteurs
 Frédéric BARON
