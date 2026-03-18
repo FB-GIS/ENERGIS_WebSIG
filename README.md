@@ -75,7 +75,7 @@ Dans le terminal de votre IDE, positionnez vous sur le dossier frontend : cd sit
 Pour la gestion du SCSS, positionnez vous sur le dossier css : cd sites/0_ENERGIS/frontend/src/css/ PUIS sass --watch style.scss:style.css  
 
 ## Sources des données
-Les données spécifiques aux projets éoliens et photovoltaïques ont été agrégées à partir de plusieurs sources (DREAL, DDT, Geo-IDE...etc)
+Les données spécifiques aux projets éoliens et photovoltaïques ont été agrégées à partir de plusieurs sources publiques (DREAL, DDT, Geo-IDE...etc)
 
 ## Auteurs
 Frédéric BARON
