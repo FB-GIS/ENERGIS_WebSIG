@@ -44,9 +44,6 @@ CREATE TABLE `user` (
 -- Déchargement des données de la table `user`
 --
 
-INSERT INTO `user` (`id`, `firstname`, `lastname`, `email`, `address`, `zipcode`, `city`, `phone`, `password`, `role_id`) VALUES
-(25, 'admin', 'admin', 'admin@admin.fr', 'rue de XXX', '13000', 'ADMIN CITY', '0000000000', '$2b$10$wO0BcslRU7nIQQM7mMuOqO6vWy.OACgfUkKtThMwaLIwt3Br/1J3q', 1)
-
 --
 -- Index pour les tables déchargées
 --
