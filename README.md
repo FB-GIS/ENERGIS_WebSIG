@@ -44,7 +44,7 @@ Fonctionnalités cartographiques accessibles aux utilisateurs :
 - Accès à une couche de données personnelle dédiée aux utilisateurs pour tracer leurs propres zones de projet (éolien ou photovoltaïque).  
 - Recherche rapide de localités via un champ de recherche : les utilisateurs pourront entrer une adresse et l'application effectuera un zoom automatique sur le lieu qui aura été trouvé grâce à un outil de géocodage issu de la librairie Leaflet (utilisant une API OpenStreetMap).  
   
-Par le biais d'un dashboard, l'utilisateur pourra accéder soit à son profil mais aussi à l'ensemble des zones d'étude qu'il aura tracées dans l'application   cartographique. Il pourra donc les visualiser, les modifier mais aussi les supprimer.  
+Par le biais d'un dashboard, l'utilisateur pourra accéder à son profil mais aussi à l'ensemble des zones d'étude qu'il aura tracées dans l'application   cartographique. Il pourra donc les visualiser, les modifier mais aussi les supprimer.  
 
 
 ### B. Administrateurs
