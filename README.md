@@ -21,7 +21,7 @@ Le site internet sera composé de plusieurs pages permettant de :
 
 L'ensemble des fonctionnalités de l'application sera donc associé à l'interface cartographique de manière à exploiter les données géospatiales et gérer les comptes utilisateurs.
 
-### A. Utilisateurs
+#### A. Utilisateurs
 
 L'accès à la plate forme WebSIG nécessitera une authentification via un identifiant (adresse e-mail) et un mot de passe renseignés lors de l'inscription. Les utilisateurs pourront se déconnecter librement de l'application et gérer leurs informations personnelles via un profil utilisateur.
 
@@ -47,7 +47,7 @@ Fonctionnalités cartographiques accessibles aux utilisateurs :
 Par le biais d'un dashboard, l'utilisateur pourra accéder à son profil mais aussi à l'ensemble des zones d'étude qu'il aura tracées dans l'application   cartographique. Il pourra donc les visualiser, les modifier mais aussi les supprimer.  
 
 
-### B. Administrateurs
+#### B. Administrateurs
 
 L'administrateur disposera d’une interface dédiée (dashboard) pour la gestion des utilisateurs et des données géographiques de l'application.  
 Par le biais de formulaires dédiés, il pourra :  
