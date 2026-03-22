@@ -73,5 +73,5 @@ SCSS, JavaScript, Leaflet, React, Node.js, MySQL
 ## Sources des données
 Les données spécifiques aux projets éoliens et photovoltaïques ont été agrégées à partir de plusieurs sources publiques (DREAL, DDT, Geo-IDE...etc)  
 
-## Auteurs
+## Auteur
 Frédéric BARON
