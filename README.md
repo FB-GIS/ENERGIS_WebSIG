@@ -25,15 +25,15 @@ All application features will be integrated with the mapping interface to levera
 
 Access to the WebGIS platform will require authentication via a username (email address) and password provided during registration. Users will be able to freely log out of the application and manage their personal information through a user profile.  
   
-Informations collectées lors de l'inscription via un formulaire d'enregistrement :  
-Last name  
-First name  
-Email address  
-Postal address  
-Postal code  
-City  
-Phone number  
-Password  
+Information collected during registration via a sign-up form:    
+- Last name  
+- First name  
+- Email address  
+- Postal address  
+- Postal code  
+- City  
+- Phone number  
+- Password  
   
 All this information can be updated by the user through their personal space.  
 
